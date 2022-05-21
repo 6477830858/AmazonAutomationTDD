@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AmazonnSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="InvalidEmail" value="abc@gmail.com"/>
+  <parameter name="ValidPassword" value="godisone123"/>
+  <parameter name="InvalidPasword" value="1234567"/>
+  <parameter name="ValidUserName" value="+16477830858"/>
+  <parameter name="url" value="https://www.amazon.ca/"/>
+  <test thread-count="5" name="AmazonTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test.AmazonTest">
+        <methods>
+          <include name="back1"/>
+          <include name="verifywishlist2"/>
+          <include name="VerifyContinueShoppingTab"/>
+          <include name="verifyViewWishList"/>
+          <include name="verifyNewReleasePage"/>
+          <include name="action"/>
+          <include name="verifyjewellry"/>
+          <include name="verifyaddtocart"/>
+          <include name="verifyURL"/>
+          <include name="beforetest"/>
+          <include name="verifysignin"/>
+          <include name="aftersuit"/>
+          <include name="verifyperfume"/>
+          <include name="verifywishlist"/>
+          <include name="verifychechoutAndPayment"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- Test.AmazonTest -->
+      <class name="Test.SignTest">
+        <methods>
+          <include name="VerifyInValidPassword" invocation-numbers="0"/>
+          <include name="VerifyValidUserNmae" invocation-numbers="0"/>
+          <include name="verifycontinuee"/>
+          <include name="verifycontinue"/>
+          <include name="verifySigninButton"/>
+          <include name="VerifyInValidEmail" invocation-numbers="0"/>
+          <include name="verifyMousehoverAction"/>
+          <include name="VerifyValidPassword" invocation-numbers="0"/>
+          <include name="verifysignoutbutton"/>
+          <include name="aftersuit"/>
+          <include name="beforetest"/>
+          <include name="verifysubmitbutton"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- Test.SignTest -->
+      <class name="Test.WrongURL">
+        <methods>
+          <include name="VerifyWrongURL"/>
+          <include name="beforeclass"/>
+          <include name="aftersuit"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Test.WrongURL -->
+      <class name="Test.MobileTest">
+        <methods>
+          <include name="verifyResuls"/>
+          <include name="beforeclass"/>
+          <include name="verifyMobileImage"/>
+          <include name="aftersuit"/>
+          <include name="verifyaddresschange"/>
+          <include name="beforetest"/>
+          <include name="verifyaddedtocarttext"/>
+          <include name="verifyAddCart"/>
+          <include name="verifyVideo"/>
+          <include name="VerifyPrice"/>
+          <include name="verifyCustomerSection"/>
+          <include name="verifycheckout"/>
+          <include name="VerifySamsungGlaaxyPage"/>
+          <include name="verifyLocation"/>
+        </methods>
+      </class> <!-- Test.MobileTest -->
+    </classes>
+  </test> <!-- AmazonTest(failed) -->
+</suite> <!-- Failed suite [AmazonnSuite] -->

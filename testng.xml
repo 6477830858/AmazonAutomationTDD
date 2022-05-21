@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="ValidUserName" value="+16477830858"></parameter>
+<parameter name="ValidPassword" value="godisone123"></parameter>
+<parameter name="InvalidEmail" value="abc@gmail.com"></parameter>
+<parameter name="InvalidPasword" value="1234567"></parameter>
+<parameter name="url" value="https://www.amazon.ca/"></parameter>
+
+  <test thread-count="5" name="AmazonTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="Test.Launch"/>
+      <class name="Test.MobileTest"/>
+      <class name="Test.WrongURL"/>
+      <class name="Test.AmazonTest"/>
+      <class name="Test.SignTest"/>
+    </classes>
+  </test> <!-- AmazonTest -->
+ <test thread-count="5" name="Testfirefox"> 
+ <parameter name="browser" value="firefox"></parameter>
+  <classes>
+      <class name="Test.Launch"/>
+      <class name="Test.MobileTest"/>
+      <class name="Test.WrongURL"/>
+      <class name="Test.AmazonTest"/>
+      <class name="Test.SignTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
